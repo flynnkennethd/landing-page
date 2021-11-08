@@ -12,7 +12,6 @@ html, body, main{
 body {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
 }
 
 header {
@@ -29,11 +28,7 @@ header p {
 }
 ul li {
     display: inline-block;
-}
-main {
-    margin: 0;
-    padding: 0;
-    height: 100%
+    padding: 5px;
 }
 .intro {
     background-color: #1f2937;
@@ -43,6 +38,11 @@ main {
 }
 .main-content {
     background-color: white;
+    text-align: center;
+}
+#content-list {
+    display: flex;
+    justify-content: center;
 }
 .quote-space {
     background-color: #e5e7eb;
@@ -50,7 +50,11 @@ main {
 .sign-up {
     background-color: white;
 }
+.sign-up-box {
+    background-color: #3882f6;
+}
 footer {
     background-color: #1f2937;
-    color: #e5e7eb
+    color: #e5e7eb;
+    text-align: center;
 }
