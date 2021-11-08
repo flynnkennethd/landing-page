@@ -1,17 +1,19 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 5px 20px;
+    padding: 10px 20px;
 }
 
 html, body, main{
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body {
     display: flex;
     flex-direction: column;
+    flex: 1 1 0px;
 }
 
 header {
@@ -20,6 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 1 1 0px;
 }
 header p {
     color:#f9faf8;
@@ -35,26 +38,75 @@ ul li {
     color: #f9faf8;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex: 1 1 0px;
+}
+#intro-image {
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
 }
 .main-content {
     background-color: white;
     text-align: center;
+    flex: 1 1 0px;
 }
 #content-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+.content-image {
+    height: 250px;
+    width: 275px;
+    border-radius: 25px;
+    border: 2px solid #3882f6;
+    border-width: 5px;
+    padding: 0;
 }
 .quote-space {
     background-color: #e5e7eb;
+    flex: 1 1 0px;
+    padding: 50px 20px;
+}
+.quote {
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+}
+.quoted-person {
+    text-align: right;
+    color: #1f2937;
+    font-weight: bold;
+    font-size: 20px;
 }
 .sign-up {
     background-color: white;
+    padding: 25px 20px;
+    flex: 1 1 0px;
 }
 .sign-up-box {
     background-color: #3882f6;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1 1 0px;
+    color: white;
+    padding: 25px 20px;
+}
+button {
+    background-color: #3882f6;
+    color: white;
+    border-color: white;
+    border-radius: 15px;
+    border-style: solid;
 }
 footer {
     background-color: #1f2937;
     color: #e5e7eb;
     text-align: center;
+    padding: 5px 20px;
+    flex: 1 1 0px;
+}
+a:visited {
+    color: #e5e7eb;
 }
